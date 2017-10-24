@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SPK"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="768" Width="1380">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="459*"/>
+            <RowDefinition Height="278*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="Black" Opacity="0.8" HorizontalAlignment="Left" Height="930" Stroke="Black" VerticalAlignment="Top" Width="1372" Margin="0,0,0,-193" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="32" Margin="362,384,0,0" TextWrapping="Wrap" FontSize="25" Foreground="White" VerticalAlignment="Top" Width="609"><Run Text="NIM"/><Run Text=" (5 digit)"/></TextBlock>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="33" Margin="362,23,0,0" TextWrapping="Wrap" Text="Angkatan" FontSize="25" Foreground="White" VerticalAlignment="Top" Width="609" Grid.Row="1"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="33" Margin="362,284,0,0" TextWrapping="Wrap" Text="Nama" FontSize="25" Foreground="White" VerticalAlignment="Top" Width="609"/>
+        <TextBox x:Name="tbNama" HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Margin="362,322,0,0"/>
+        <TextBox x:Name="tbNIM" HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Margin="362,421,0,0" Grid.RowSpan="2"/>
+        <TextBox x:Name="tbAngkatan" HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Margin="362,61,0,0" Grid.Row="1"/>
+        <Button x:Name="bOK" Content="OK!" FontSize="40" HorizontalAlignment="Left" Height="62" Margin="598,154,0,0" Grid.Row="1" VerticalAlignment="Top" Width="186" Background="Aqua"/>
+
+
     </Grid>
 </Window>
