@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SPK"
         mc:Ignorable="d"
-        Title="MainWindow" Height="768" Width="1380">
+        Title="Login Screen" Height="768" Width="1380" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Helvetica Neue LT Std" WindowState="Maximized" WindowStyle="None" IsTabStop="True">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="459*"/>

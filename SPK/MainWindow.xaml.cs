@@ -23,6 +23,7 @@ namespace SPK
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
