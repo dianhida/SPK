@@ -6,20 +6,28 @@
         xmlns:local="clr-namespace:SPK"
         mc:Ignorable="d"
         Title="Login Screen" Height="768" Width="1380" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Helvetica Neue LT Std" WindowState="Maximized" WindowStyle="None" IsTabStop="True">
-    <Grid>
+    <Grid Background="#FFEEEEEE">
         <Grid.RowDefinitions>
             <RowDefinition Height="459*"/>
             <RowDefinition Height="278*"/>
         </Grid.RowDefinitions>
-        <Rectangle Fill="Black" Opacity="0.8" HorizontalAlignment="Left" Height="930" Stroke="Black" VerticalAlignment="Top" Width="1372" Margin="0,0,0,-193" Grid.RowSpan="2"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="32" Margin="362,384,0,0" TextWrapping="Wrap" FontSize="25" Foreground="White" VerticalAlignment="Top" Width="609"><Run Text="NIM"/><Run Text=" (5 digit)"/></TextBlock>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="33" Margin="362,23,0,0" TextWrapping="Wrap" Text="Angkatan" FontSize="25" Foreground="White" VerticalAlignment="Top" Width="609" Grid.Row="1"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="33" Margin="362,284,0,0" TextWrapping="Wrap" Text="Nama" FontSize="25" Foreground="White" VerticalAlignment="Top" Width="609"/>
-        <TextBox x:Name="tbNama" HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Margin="362,322,0,0"/>
-        <TextBox x:Name="tbNIM" HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Margin="362,421,0,0" Grid.RowSpan="2"/>
-        <TextBox x:Name="tbAngkatan" HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Margin="362,61,0,0" Grid.Row="1"/>
-        <Button x:Name="bOK" Content="OK!" FontSize="40" HorizontalAlignment="Left" Height="62" Margin="598,154,0,0" Grid.Row="1" VerticalAlignment="Top" Width="186" Background="Aqua"/>
 
+        <Rectangle Fill="Black" Opacity="0.2" HorizontalAlignment="Left" Height="563" Margin="372,81,0,0" RadiusY="25" RadiusX="25" Grid.RowSpan="2" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="649"/>
+
+        <TextBlock x:Name="tblJudul" FontFamily="SegoeUI" FontSize="80" Foreground="#374fbf" HorizontalAlignment="Center" Height="72" Margin="590,93,640,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"><Run Text="Ko"/><Run Text="n"/></TextBlock>
+        <TextBlock x:Name="tblJudul2" FontFamily="SegoeUI" FontSize="80" Foreground="Yellow" HorizontalAlignment="Center" Height="72" Margin="729,93,501,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Text="TI"/>
+        <TextBlock x:Name="tblSubJudul" FontFamily="SegoeUI" FontSize="25" Foreground="#374fbf" HorizontalAlignment="Center" Height="38" Margin="460,176,418,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="494"><Run Text="Sistem Pendukung P"/><Run Text="emilihan Konsentrasi TI"/></TextBlock>
+        <Rectangle Fill="#FFEEEEEE" Opacity="0.5" RadiusX="25" RadiusY="25" HorizontalAlignment="Center" Height="425" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="614" Margin="372,219,386,0" Grid.RowSpan="2"/>
+        <TextBlock x:Name="tblNIM" Opacity="0.3" HorizontalAlignment="Left" Height="32" Margin="612,431,0,0" TextWrapping="Wrap" FontSize="25" Foreground="#3b3b3b" VerticalAlignment="Top" Width="143"><Run Text="NIM"/><Run Text=" (5 digit)"/></TextBlock>
+        <TextBlock x:Name="tblNama" Opacity="0.3" HorizontalAlignment="Center" Height="46" Margin="646,317,652,0" TextWrapping="Wrap" Text="Nama" FontSize="25" Foreground="#3b3b3b" VerticalAlignment="Top" Width="74"/>
+        <TextBox x:Name="tbNama" Foreground="Black" FontSize="25" GotFocus="tbNama_GotFocus" LostFocus="tbNama_LostFocus" Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="Black" HorizontalAlignment="Center" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="476" Margin="448,304,448,0" Padding="0,2,0,0" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="tbNIM" Foreground="Black" FontSize="25" GotFocus="tbNIM_GotFocus" LostFocus="tbNIM_LostFocus" Background="{x:Null}" BorderThickness="0,0,0,3" BorderBrush="Black" HorizontalAlignment="Center" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Margin="566,418,566,0" Padding="0,3,0,0" HorizontalContentAlignment="Center"/>
+        <Rectangle RadiusX="7" RadiusY="7" StrokeThickness="0" Fill="#374fbf" HorizontalAlignment="Center" Height="70" Margin="0,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="128" Grid.Row="1"/>
+        <Button x:Name="bMasuk" Click="bMasuk_Click" BorderThickness="0" Content="Teruskan" FontSize="25" Foreground="White" Opacity="100" HorizontalAlignment="Center" Height="70" Margin="0,55,0,0" VerticalAlignment="Top" Width="128" Grid.Row="1">
+            <Button.Background>
+                <SolidColorBrush Color="#FF040404" Opacity="0"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

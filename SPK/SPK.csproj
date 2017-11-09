@@ -55,14 +55,43 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Semester1.xaml.cs">
-      <DependentUpon>Semester1.xaml</DependentUpon>
+    <Compile Include="pHasil.xaml.cs">
+      <DependentUpon>pHasil.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Semester2.xaml.cs">
-      <DependentUpon>Semester2.xaml</DependentUpon>
+    <Compile Include="pJudul.xaml.cs">
+      <DependentUpon>pJudul.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Semester3.xaml.cs">
-      <DependentUpon>Semester3.xaml</DependentUpon>
+    <Compile Include="pLangkah.xaml.cs">
+      <DependentUpon>pLangkah.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pSemester1.xaml.cs">
+      <DependentUpon>pSemester1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pSemester2.xaml.cs">
+      <DependentUpon>pSemester2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pSemester3.xaml.cs">
+      <DependentUpon>pSemester3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pSemester4.xaml.cs">
+      <DependentUpon>pSemester4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Switcher.cs" />
+    <Compile Include="Temper.cs" />
+    <Compile Include="ucHasil.xaml.cs">
+      <DependentUpon>ucHasil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucSemester1.xaml.cs">
+      <DependentUpon>ucSemester1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucSemester2.xaml.cs">
+      <DependentUpon>ucSemester2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucSemester3.xaml.cs">
+      <DependentUpon>ucSemester3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucSemester4.xaml.cs">
+      <DependentUpon>ucSemester4.xaml</DependentUpon>
     </Compile>
     <Page Include="InputWindow.xaml">
       <SubType>Designer</SubType>
@@ -83,15 +112,51 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Semester1.xaml">
+    <Page Include="pHasil.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Semester2.xaml">
+    <Page Include="pJudul.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Semester3.xaml">
+    <Page Include="pLangkah.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pSemester1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pSemester2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pSemester3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pSemester4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucHasil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucSemester1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucSemester2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucSemester3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucSemester4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

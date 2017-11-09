@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace SPK
 {
     /// <summary>
-    /// Interaction logic for Semester3.xaml
+    /// Interaction logic for ucSemester2.xaml
     /// </summary>
-    public partial class Semester3 : UserControl
+    public partial class ucSemester2 : UserControl
     {
-        public Semester3()
+        public ucSemester2()
         {
             InitializeComponent();
         }

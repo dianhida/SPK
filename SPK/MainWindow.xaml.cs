@@ -25,5 +25,42 @@ namespace SPK
             InitializeComponent();
 
         }
+
+        private void tbNama_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbNama.Text) == true)
+            {
+                tblNama.Visibility = Visibility.Visible;
+            }
+            else
+                tblNama.Visibility = Visibility.Hidden;
+        }
+
+        private void tbNIM_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbNama.Text) == true)
+            {
+                tblNIM.Visibility = Visibility.Visible;
+            }
+            else
+                tblNIM.Visibility = Visibility.Hidden;
+        }
+
+        private void tbNama_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tblNama.Visibility = Visibility.Hidden;
+        }
+
+        private void tbNIM_GotFocus(object sender, RoutedEventArgs e)
+        {    
+            tblNIM.Visibility = Visibility.Hidden;
+        }
+
+        private void bMasuk_Click(object sender, RoutedEventArgs e)
+        {
+            InputWindow mainwindow = new InputWindow();
+            mainwindow.Show();
+            this.Close();
+        }
     }
 }

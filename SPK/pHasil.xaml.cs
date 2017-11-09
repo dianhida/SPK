@@ -10,29 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SPK
 {
     /// <summary>
-    /// Interaction logic for InputWindow.xaml
+    /// Interaction logic for pHasil.xaml
     /// </summary>
-    public partial class InputWindow : Window
+    public partial class pHasil : UserControl
     {
-        public InputWindow()
+        public pHasil()
         {
             InitializeComponent();
-            Temper.semester = "1";
-
-            Switcher.pageSwitcher = this;
-            Switcher.Switch(new ucSemester1());
         }
-
-        public void Navigate(UserControl nextPage)
-        {
-            this.Content = nextPage;
-        }
-
-
     }
 }
